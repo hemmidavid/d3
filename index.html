@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="add_in.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<head>
+
+	<body>
+
+		<svg width="50" height="50">
+		  <circle id="circle_1" onclick="change_size" cx="25" cy="25" r="25" fill="purple" />
+		</svg>	
+	</body>
+
+	<div id="demo">test</div>
+
+	<script> 
+	document.write(5 + 6);
+		function change_size(){
+			// var img = document.getElementById('circle_1')
+			// var width = img.clientWidth;
+			// var height = img.clientHeight;
+			var width_1 = document.getElementById('circle_1').getBBox().width 
+			if(width_1 == 25){
+				document.write(5 + 16);
+				document.getElementById("demo").innerHTML = "Hello Dolly.";
+				document.getElementById('circle_1').setAttribute("cx", "25");
+			} else{
+				document.write( 6);
+				document.getElementById("demo").innerHTML = "Hello Dolly else";
+				document.getElementById('circle_1').setAttribute("cx", "10");
+
+			}
+		}
+
+	</script>
+</<html>
