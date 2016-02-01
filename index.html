@@ -8,9 +8,22 @@
 	<body>
 
 		<svg width="50" height="50">
-		  <circle id="circle_1" onclick="change_size" cx="25" cy="25" r="25" fill="purple" />
+		  <circle id="circle_1" onmouseover="change_size" cx="25" cy="25" r="25" fill="purple" />
 		</svg>	
+	
+		<svg width="70" height="70">
+		  <circle icx="25" cy="125" r="500" fill="blue" 
+		  		onmouseover="evt.target.setAttribute('opacity', '0.5');"
+		  		onmouseout="evt.target.setAttribute('opacity','1)');"
+
+		  />
+		</svg>	
+
+
+
 	</body>
+
+
 
 	<div id="demo">test</div>
 
